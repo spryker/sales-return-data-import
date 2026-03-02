@@ -22,11 +22,6 @@ class ReturnReasonWriterStep extends PublishAwareStep implements DataImportStepI
      */
     protected const EVENT_RETURN_REASON_PUBLISH_WRITE = 'Return.reason.publish_write';
 
-    /**
-     * @param \Spryker\Zed\DataImport\Business\Model\DataSet\DataSetInterface $dataSet
-     *
-     * @return void
-     */
     public function execute(DataSetInterface $dataSet): void
     {
         $salesReturnReasonEntity = $this->getSalesReturnReasonQuery()

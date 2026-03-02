@@ -33,9 +33,6 @@ class ReturnReasonDataImportPluginTest extends Unit
      */
     protected $tester;
 
-    /**
-     * @return void
-     */
     protected function setUp(): void
     {
         parent::setUp();
@@ -43,9 +40,6 @@ class ReturnReasonDataImportPluginTest extends Unit
         $this->tester->ensureReturnReasonTablesIsEmpty();
     }
 
-    /**
-     * @return void
-     */
     public function testImportImportsData(): void
     {
         // Arrange
@@ -64,9 +58,6 @@ class ReturnReasonDataImportPluginTest extends Unit
         $this->tester->assertSalesReturnReasonDatabaseTablesContainsData();
     }
 
-    /**
-     * @return void
-     */
     public function testGetImportTypeReturnsTypeOfImporter(): void
     {
         // Act

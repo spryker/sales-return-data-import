@@ -12,9 +12,6 @@ use Orm\Zed\SalesReturn\Persistence\SpySalesReturnReasonQuery;
 
 class SalesReturnDataImportHelper extends Module
 {
-    /**
-     * @return void
-     */
     public function assertSalesReturnReasonDatabaseTablesContainsData(): void
     {
         $salesReturnReasonQuery = $this->getSalesReturnReasonQuery();

@@ -19,9 +19,6 @@ use Spryker\Zed\SalesReturnDataImport\Business\ReturnDataImportStep\ReturnReason
  */
 class SalesReturnDataImportBusinessFactory extends DataImportBusinessFactory
 {
-    /**
-     * @return \Spryker\Zed\DataImport\Business\Model\DataImporterInterface
-     */
     public function getReturnReasonDataImporter(): DataImporterInterface
     {
         $dataImporter = $this->getCsvDataImporterFromConfig($this->getConfig()->getReturnReasonDataImporterConfiguration());
@@ -35,9 +32,6 @@ class SalesReturnDataImportBusinessFactory extends DataImportBusinessFactory
         return $dataImporter;
     }
 
-    /**
-     * @return \Spryker\Zed\DataImport\Business\Model\DataImportStep\DataImportStepInterface
-     */
     public function createReturnReasonWriterStep(): DataImportStepInterface
     {
         return new ReturnReasonWriterStep();
