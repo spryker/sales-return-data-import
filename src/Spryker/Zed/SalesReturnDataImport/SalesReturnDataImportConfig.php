@@ -13,6 +13,8 @@ use Spryker\Zed\DataImport\DataImportConfig;
 class SalesReturnDataImportConfig extends DataImportConfig
 {
     /**
+     * @api
+     *
      * @var string
      */
     public const IMPORT_TYPE_RETURN_REASON = 'return-reason';
